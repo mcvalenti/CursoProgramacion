@@ -1,0 +1,7 @@
+CLASE 9 DE ABRIL
+
+Separar los ejercicios de fechas de los de matematica (invocando a la biblio de matematica en el de fechas): Matematica, Fecha, vectores, matrices.
+
+Hacer un programa que imprima todos los valores de la tabla ascii  (en int,exa,octal)
+
+Macro remplazos. DEFINE --> muy buenos! Pero ojo! que reemplaza literal, no como las funciones. Ergo, usar paréntesis. 
