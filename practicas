@@ -1,0 +1,114 @@
+/* Ejercicio 14 - FECHAS
+    note: the use of validaFecha2 requires vec[to be defined]
+
+
+    tFecha fecha1;
+    int vec[] = {0,0,0};
+    char* err_vec[] = {"Dia", "Mes", "Anio"};
+    int i;
+    fecha1.anio=20035;
+    fecha1.mes=2;
+    fecha1.dia=29;
+
+
+    if (validaFecha2(&fecha1, vec)){
+        printf("Fecha valida");
+    } else {
+        printf("Fecha invalida\n");
+        for (i=0;i<sizeof(vec)/sizeof(int);i++){
+            if (vec[i]==0){
+                printf("Error en %s\n", err_vec[i]);
+            }
+
+        }
+    }
+*/
+
+
+
+
+
+/* Ejercicio 13 - Numeros primos
+
+    int n,count,cociente,resto;
+    bool primo=true;
+    n=83;
+    count=0;
+
+    while(primo){
+        count=count+1;
+        cociente=0;
+        resto=0;
+        cocienteYresto(n,count,&cociente,&resto);
+        if (resto==0 && count!= 1){
+            primo=false;
+            printf("El numero no es primo");
+            }
+        else if (count==n){
+            printf("El numero es primo");
+            primo=false;
+            }
+        }*/
+
+
+    /* Ejercicio 7 - Numeros naturales: PERFECTOS, DEFICIENTES y ABUNDANTES
+    int n,count,cociente,resto,suma;
+    n=12;
+    count=1;
+    suma=0;
+
+    while(count<n){
+        cociente=0;
+        resto=0;
+        cocienteYresto(n,count,&cociente,&resto);
+        if (resto==0){
+            suma=suma+count;
+            printf("Es divisor: %i \n",count);
+        }
+        count=count+1;
+    }
+
+    printf("suma de divisores: %i \n",suma);
+    if (suma==n){
+        printf("El numero es PERFECTO \n");
+    }
+    else if (suma<n){
+        printf("El numero es DEFICIENTE \n");
+    }
+    else {
+        printf("El numero es ABUNDANTE \n");
+    }*/
+
+
+    //n=10;
+    //n=12;
+
+    /* Ejercicio 9 - Cociente y resto
+    int dividendo,divisor,cociente,resto;
+    dividendo=461;
+    divisor=13;
+    cociente=0;
+    resto=0;
+    if (divisor!=0){
+        cocienteYresto(dividendo,divisor,&cociente,&resto);
+        printf("El cociente es %i \n",cociente);
+        printf("El resto es %i \n",resto);
+    }
+    else {
+        printf("Division por cero \n");
+    }*/
+
+    /*
+    Ejercicio 4 - Raiz
+    float r,x,TOL;
+    x=25;
+    TOL=0.02;
+    r=compute_root(x,TOL);
+    if (r>0)
+        printf("El resultado aproximado es %.2f\n",r);
+    else
+        printf("Error! El valor ingresado en negativo");
+    Ejercicio 5 - Seno
+    r=seno(x,TOL);
+    printf("El resultado aproximado es %.2f\n",r);
+    printf("El resultado real es %.2f\n",sin(x));*/
