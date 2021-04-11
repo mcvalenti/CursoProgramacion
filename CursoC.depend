@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1618096722 source:/home/ceci/Documentos/CursoC/CursoC/main.c
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	<stdio.h>
+	<math.h>
+	"auxiliares.h"
+	"vector_lib.h"
+
+1612047109 /home/ceci/Documentos/CursoC/CursoC/auxiliares.h
+	<stdbool.h>
+	<string.h>
+
+1612048817 source:/home/ceci/Documentos/CursoC/CursoC/auxiliares.c
+	"auxiliares.h"
+	<stdbool.h>
+	<stdio.h>
+	<math.h>
+
+1613258441 source:/home/ceci/Documentos/CursoC/CursoC/vector_lib.c
+	"vector_lib.h"
+	<stdio.h>
+
+1613256546 /home/ceci/Documentos/CursoC/CursoC/vector_lib.h
+	<stdbool.h>
+	<string.h>
+
