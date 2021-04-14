@@ -5,3 +5,17 @@ Separar los ejercicios de fechas de los de matematica (invocando a la biblio de 
 Hacer un programa que imprima todos los valores de la tabla ascii  (en int,exa,octal)
 
 Macro remplazos. DEFINE --> muy buenos! Pero ojo! que reemplaza literal, no como las funciones. Ergo, usar paréntesis. 
+
+CLASE 13 DE ABRIL
+
+Arrays - 
+Insersión: Considerar:
+1)rechazar los casos con insersiones que superen la cantidad de elementos posibles
+2)incrementar el tamaño del vector
+3)desplazar para insertar y desestimar los valores que se corren por fuera del tamaño del vector. 
+
+Punteros -
+
+
+
+

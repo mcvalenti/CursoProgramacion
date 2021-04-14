@@ -6,6 +6,6 @@
 
 
 void mostrar_vector(int* vect,int ce);
-void insertar_elemento(int* vect,int ce);
+void insertar_elemento(int* vect,int ce, int pos, int value);
 
 #endif // AUXILIARES_H_INCLUDED

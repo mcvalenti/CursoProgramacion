@@ -26,3 +26,30 @@
 	<stdbool.h>
 	<string.h>
 
+1612048817 source:/home/ceci/svn/CursoProgramacion/trunk/auxiliares.c
+	"auxiliares.h"
+	<stdbool.h>
+	<stdio.h>
+	<math.h>
+
+1612047109 /home/ceci/svn/CursoProgramacion/trunk/auxiliares.h
+	<stdbool.h>
+	<string.h>
+
+1618358551 source:/home/ceci/svn/CursoProgramacion/trunk/main.c
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	<stdio.h>
+	<math.h>
+	"auxiliares.h"
+	"vector_lib.h"
+
+1618358408 /home/ceci/svn/CursoProgramacion/trunk/vector_lib.h
+	<stdbool.h>
+	<string.h>
+
+1618358410 source:/home/ceci/svn/CursoProgramacion/trunk/vector_lib.c
+	"vector_lib.h"
+	<stdio.h>
+
