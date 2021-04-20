@@ -1,9 +1,7 @@
 #include "auxiliares.h"
-#include <stdbool.h>
 #include <stdio.h>
 #include <math.h>
 
-int es_bisiesto(int);
 
 
 float compute_root(float a, float TOL)
@@ -94,7 +92,7 @@ void cocienteYresto(int dividendo,int divisor,int *cociente,int *resto)
     *resto=dividendo-producto;
 }
 
-bool es_divisible(int dividendo, int divisor)
+int es_divisible(int dividendo, int divisor)
 {
     int cociente,resto;
     cociente=0;
@@ -106,89 +104,17 @@ bool es_divisible(int dividendo, int divisor)
         printf("Division por cero \n");
     }
     if (resto==0){
-        return true;
+        return 1;
     }else {
-        return false;
-    }
-
-}
-
-int es_bisiesto(int anio)
-{
-    bool divisible_x_4, divisible_x_100, divisible_x_400;
-
-    divisible_x_4= es_divisible(anio, 4);
-    divisible_x_100= es_divisible(anio, 100);
-    divisible_x_400= es_divisible(anio, 400);
-
-    if (divisible_x_4 && !divisible_x_100)
-    {
-        return 1;
-    }else if (divisible_x_4 && divisible_x_100 && divisible_x_400){
-        return 1;
-    }else{
-        return 0;
-    }
-}
-
-
-int validaFecha2(tFecha* fecha1, int* vec){
-    /* This function modifies initial vec values*/
-
-    bool anio_valido=false, mes_valido=false, dia_valido=false;
-    int cant_dias[][12] = {{31,28,31,30,31,30,31,31,30,31,30,31},
-                    {31,29,31,30,31,30,31,31,30,31,30,31}};
-
-    if ((fecha1->dia >= 1) && (fecha1->dia <= cant_dias[es_bisiesto(fecha1->anio)][fecha1->mes-1])){
-        dia_valido=true;
-        *vec=1;
-        }
-    vec++;
-    if (1<=fecha1->mes && fecha1->mes<=12){
-        mes_valido=true;
-        *vec=1;
-        }
-    vec++;
-    if (1900<fecha1->anio && fecha1->anio<2099){
-        anio_valido=true;
-        *vec=1;
-        }
-
-    if (anio_valido && mes_valido && dia_valido){
-        return 1;
-        }
-    else {
         return 0;
     }
 
-
 }
 
-int validaFecha(tFecha *fecha1){
-
-    bool anio_valido=false, mes_valido=false, dia_valido=false;
-    int cant_dias[2][12] = {{31,28,31,30,31,30,31,31,30,31,30,31},
-                    {31,29,31,30,31,30,31,31,30,31,30,31}};
-
-    if ((fecha1->dia >= 1) && (fecha1->dia <= cant_dias[es_bisiesto(fecha1->anio)][fecha1->mes-1]))
-    {
-        dia_valido=true;
-    }
-
-    if (1900<fecha1->anio && fecha1->anio<2099){
-        anio_valido=true;
-        }
-
-    if (1<=fecha1->mes && fecha1->mes<=12){
-        mes_valido=true;
-        }
 
 
-    if (anio_valido && mes_valido && dia_valido){
-        return 1;
-        }
-    else {
-        return 0;
-    }
-}
+
+
+
+
 

@@ -35,10 +35,16 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="auxiliares.h" />
+		<Unit filename="fecha.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="fecha.h">
+			<Option target="Debug" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="practicas" />
 		<Unit filename="vector_lib.c">
 			<Option compilerVar="CC" />
 		</Unit>
