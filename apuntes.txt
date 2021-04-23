@@ -17,5 +17,18 @@ Insersión: Considerar:
 Punteros -
 
 
+CLASE 15 (en viaje a la costa - fechas)
 
+CLASE 20 DE ABRIL
 
+Punteros y cadenas de caracteres. 
+
+flecha para variables que son punteros.
+el punto para variables que son estructuras.
+
+Aritmética de punteros.
+px ++ (modifica px) es igual que *(px+i) pero esta ultima variante no modifica px. 
+
+Cadenas:
+lib - strchr, encuentra la primera aparicion de un caracter
+lib - strrchr, encuentra la ultima aparicion de un caracter
