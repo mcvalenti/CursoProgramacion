@@ -32,3 +32,36 @@ px ++ (modifica px) es igual que *(px+i) pero esta ultima variante no modifica p
 Cadenas:
 lib - strchr, encuentra la primera aparicion de un caracter
 lib - strrchr, encuentra la ultima aparicion de un caracter
+
+CLASE 22 DE ABRIL
+
+Cadenas --> TP en word con la consigna para cargar alumno. 
+Hacer la validación de normalizacion de nombre.
+Incluir la biblioteca de fecha
+carrera: con un switch
+los campos correctos y los errones se indican con un array con 1:error y 0:correcto
+vecError[0,1,1,0,1,....]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

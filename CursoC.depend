@@ -35,12 +35,13 @@
 	<stdbool.h>
 	<string.h>
 
-1618880123 source:/home/ceci/svn/CursoProgramacion/trunk/main.c
+1619224319 source:/home/ceci/svn/CursoProgramacion/trunk/main.c
 	<stdlib.h>
 	<stdbool.h>
 	<string.h>
 	<stdio.h>
 	"fecha.h"
+	"menu.h"
 
 1618358408 /home/ceci/svn/CursoProgramacion/trunk/vector_lib.h
 	<stdbool.h>
@@ -55,4 +56,9 @@
 	"auxiliares.h"
 
 1618879482 /home/ceci/svn/CursoProgramacion/trunk/fecha.h
+
+1619223096 /home/ceci/svn/CursoProgramacion/trunk/menu.h
+
+1619224530 source:/home/ceci/svn/CursoProgramacion/trunk/menu.c
+	<stdio.h>
 

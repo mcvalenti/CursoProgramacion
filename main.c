@@ -3,33 +3,37 @@
 #include <string.h>
 #include <stdio.h>
 #include "fecha.h"
-
+#include "menu.h"
 //void cocienteYresto(int,int,int *cociente,int *resto);
 
 
 #define TAM 6; // macros, directivas para el pre-compilador
 int main()
 {
-    int es_valida;
-    tFecha tfecha;
-
-    printf("Dia: "); scanf("%d",&tfecha.dia);
-    printf("Mes: "); scanf("%d",&tfecha.mes);
-    printf("Anio: "); scanf("%d",&tfecha.anio);
-
-    printf(" Ud ingreso: %d/%d/%d \n",tfecha.dia,tfecha.mes,tfecha.anio);
-
-    es_valida=validaFecha(&tfecha);
-
-    if (es_valida==1){
-        printf("La fecha es valida ");
-        }
-    else {
-        printf("La fecha NO es valida");
-        }
-
+    int opcion_elegida;
+    opcion_elegida=opcion_menu();
+    printf("La opcion seleccionada es: %d",opcion_elegida);
     return 0;
 }
+//    int es_valida;
+//    tFecha tfecha;
+//
+//    printf("Dia: "); scanf("%d",&tfecha.dia);
+//    printf("Mes: "); scanf("%d",&tfecha.mes);
+//    printf("Anio: "); scanf("%d",&tfecha.anio);
+//
+//    printf(" Ud ingreso: %d/%d/%d \n",tfecha.dia,tfecha.mes,tfecha.anio);
+//
+//    es_valida=validaFecha(&tfecha);
+//
+//    if (es_valida==1){
+//        printf("La fecha es valida ");
+//        }
+//    else {
+//        printf("La fecha NO es valida");
+//        }
+
+
 
 //    VECTORES
 //    int vect[]={7,3,9,2};
