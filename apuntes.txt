@@ -42,6 +42,8 @@ carrera: con un switch
 los campos correctos y los errones se indican con un array con 1:error y 0:correcto
 vecError[0,1,1,0,1,....]
 
+pagina de fechas julianas:https://quasar.as.utexas.edu/BillInfo/JulianDatesG.html
+
 
 
 
