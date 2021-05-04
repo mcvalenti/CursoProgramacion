@@ -31,10 +31,18 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="alumno.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="alumno.h" />
 		<Unit filename="auxiliares.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="auxiliares.h" />
+		<Unit filename="cadenas.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cadenas.h" />
 		<Unit filename="fecha.c">
 			<Option compilerVar="CC" />
 			<Option target="Debug" />
@@ -45,14 +53,14 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="matrices.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="matrices.h" />
 		<Unit filename="menu.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="menu.h" />
-		<Unit filename="vector_lib.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="vector_lib.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

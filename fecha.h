@@ -14,5 +14,7 @@ int validaFecha(tFecha* tfecha);
 int cant_dias(int mes, int anio);
 int fecha2jd(int anio, int mes, int dia);
 void jd2fecha(float jd, tFecha* tfecha1);
+void ingresaFecha(tFecha* tfecha1);
+void muestraFecha(tFecha* tfecha1);
 
 #endif // FECHA_H_INCLUDED

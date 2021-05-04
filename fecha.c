@@ -107,3 +107,23 @@ void jd2fecha(float jd, tFecha* tfecha1){
     }
     return;
 }
+
+void ingresaFecha(tFecha* tfecha1){
+    int es_correcta;
+    do{
+        scanf("%d/%d/%d", &tfecha1->dia,&tfecha1->mes,&tfecha1->anio);
+        es_correcta=validaFecha(tfecha1);
+
+        if (!es_correcta){
+            printf("Fecha incorrecta! \n");
+        }
+
+    }while(!es_correcta);
+
+}
+
+void muestraFecha(tFecha* tfecha1){
+
+    printf("%d/%d/%d \n", tfecha1->dia,tfecha1->mes,tfecha1->anio);
+
+}

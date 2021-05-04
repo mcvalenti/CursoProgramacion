@@ -44,6 +44,36 @@ vecError[0,1,1,0,1,....]
 
 pagina de fechas julianas:https://quasar.as.utexas.edu/BillInfo/JulianDatesG.html
 
+CLASE 27 DE ABRIL
+
+Vectores -> qsort 
+
+funcion de comparacion
+int cmp_vect(const void * v1, const void * v2){
+ const int * e1=v1,
+	   * e2=v2;
+	return *e1-*e2;
+}
+METODOS DE ORDENAMIENTO:
+*Burbujeo
+*Seleccion
+*Insercion
+
+Seleccion:
+1-buscar el menor
+2-intercambiar con el actual
+3-avanzar
+
+Matrices -> es obligatorio declarar la cantidad de columnas
+Hacer ejercicio de triangulos de Matriz. 4 funciones que cada 
+una muestre un triangulo distinto. 
+
+CLASE 30 DE ABRIL
+
+Validaciones del TP integrador. 
+
+
+
 
 
 

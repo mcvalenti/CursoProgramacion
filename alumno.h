@@ -1,6 +1,5 @@
 #ifndef ALUMNO_H_INCLUDED
 #define ALUMNO_H_INCLUDED
-
 #include "fecha.h"
 
 typedef struct {
@@ -15,18 +14,23 @@ typedef struct {
     char estado[1];
 } Dalumno;
 
-// Validaciones
-int valida_dni(int dni);
-char* normalizar_nombre(char* nombre_completo);
-int valida_fecha_nacimiento(tFecha* fecha_nacimiento);
-int valida_sexo(char sexo);
-int valida_fecha_ingreso(tFecha* fecha_ingreso);
 
+int ingresaAlumno(Dalumno* alumno);
 
+//// Validaciones
 
-
-int carga_con_validacion(); //valida a medida que se cargan los datos
-int valida_alumno(Dalumno* alumno1, tFecha* fechaHoy); //valida la estuctura que recibe por referencia
+int validaAlumno(tFecha* fecha_proceso, Dalumno* alumno);
+//int valida_dni(int dni);
+//char* normalizar_nombre(char* nombre_completo);
+//int valida_fecha_nacimiento(tFecha* fecha_nacimiento);
+//int valida_sexo(char sexo);
+//int valida_fecha_ingreso(tFecha* fecha_ingreso);
+//
+//
+//
+//
+//int carga_con_validacion(); //valida a medida que se cargan los datos
+//int valida_alumno(Dalumno* alumno1, tFecha* fechaHoy); //valida la estuctura que recibe por referencia
 
 
 #endif // ALUMNO_H_INCLUDED
