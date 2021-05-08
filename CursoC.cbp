@@ -35,6 +35,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="alumno.h" />
+		<Unit filename="archivo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="archivo.h" />
 		<Unit filename="auxiliares.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -51,9 +55,6 @@
 			<Option target="Debug" />
 		</Unit>
 		<Unit filename="main.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="matrices.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="matrices.h" />

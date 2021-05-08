@@ -6,6 +6,7 @@
 #include "menu.h"
 #include "matrices.h"
 #include "alumno.h"
+#include "archivo.h"
 //void cocienteYresto(int,int,int *cociente,int *resto);
 
 
@@ -13,9 +14,15 @@
 //#define TAM 5 // macros, directivas para el pre-compilador
 int main()
 {
-    int i;
+    char nombreArchivo[]="salida.txt";
+
+    escribe_archivo(nombreArchivo);
+    return 0;
+}
+
+   // int i;
     //Dalumno alu1;
-    tFecha fecha_proceso;
+    //tFecha fecha_proceso;
 
     /// ingresar los datos
     /// validar
@@ -27,17 +34,17 @@ int main()
  //   printf("Ingrese la fecha de proceso: \n");
 //    ingresaFecha(&fecha_proceso);
 
-    char nombres[5][41]={
-        {" Pepe,  Botella "},
-        {" Jonathan, Uran "},
-        {"Diego,Ruiz"},
-        {" JUAN CARLOS, garcia "},
-        {" ViolETA PARRA "},
-    };
+ //   char nombres[5][41]={
+ //       {" Pepe,  Botella "},
+ //       {" Jonathan, Uran "},
+ //       {"Diego,Ruiz"},
+ //       {" JUAN CARLOS, garcia "},
+ //       {" ViolETA PARRA "},
+ //   };
 
-    for (i=0;i<5;i++){
-        printf("%s \n",nombres[i]);
-    }
+    // for (i=0;i<5;i++){
+    //    printf("%s \n",nombres[i]);
+
 
 //    for (i=0;i<5;i++){
 //
@@ -62,8 +69,6 @@ int main()
 //    alu1.estado="R"; // Se genera cuando se crea el alumno por default
 
 
-
-}
 
 
 //    MATRICES

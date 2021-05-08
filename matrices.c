@@ -62,6 +62,23 @@ void diag_secundaria(int mat[][TAM], int nf, int nc){
     return;
 }
 
+void triang_der(int mat[][TAM], int ord){
+    /**
+      *Imprime triangulo derecho de la matriz
+      */
+
+    int i,j, inij;
+    for (i=0;i<ord;i++){
+        inij=ord-i-1>i?ord-i-1:i;
+        printf("\%*s",3*inij,""); // el 3 es la cantidad de lugares de los caracteres
+        for (j=inij;j<ord;j++){
+
+            printf("%3d ",mat[i][j]);
+        }
+        printf("\n");
+    }
+    return ;
+
 //    int mat1 [3][TAM]= {{  1,  2,  3},
 //                        { 44,  5,  6},
 //                        {  7,  8,944}};

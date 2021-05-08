@@ -72,10 +72,23 @@ CLASE 30 DE ABRIL
 
 Validaciones del TP integrador. 
 
+CLASE 04 DE MAYO
 
+Seguimos con matrices. 
 
+Archivos:--> stdio
+dos tipos de archivo: binarios y de texto. 
+archivo binario: memoria copiada tal cual de la memoria ram al disco. Esto
+trae problemas cuando se compila en máquinas distintas. No se pueden llevar 
+de un máquina a otra archivos binarios, no son "protables" porque en definitiva 
+es memoria y cada máquina la gestiona de manera distinta.
+archivo de texto: se puede portar. la memoria ya está interpretada como texo pero
+guardada en un archivo. 
+modo de apertura del archivo: r=read, w=write, a=append. 
+Y luego, b=binario, t=texto. Si no se pone segunda letra asume texto. El modificador +
+me permite volver y leer dentro del archivo. r+, w+, a+.
 
-
+fwrite--> devuelve un size(t) y fread son las funciones más usadas para trabajar con archivos binarios. 
 
 
 

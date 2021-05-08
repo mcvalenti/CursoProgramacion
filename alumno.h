@@ -12,6 +12,7 @@ typedef struct {
     int materias_aprobadas;
     tFecha ultima_materia;
     char estado[1];
+    tFecha fecha_baja;
 } Dalumno;
 
 
