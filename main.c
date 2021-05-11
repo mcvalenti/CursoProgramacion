@@ -7,22 +7,91 @@
 #include "matrices.h"
 #include "alumno.h"
 #include "archivo.h"
-//void cocienteYresto(int,int,int *cociente,int *resto);
 
-
-
-//#define TAM 5 // macros, directivas para el pre-compilador
+#define TAM 7
 int main()
 {
-    char nombreArchivo[]="salida.txt";
+    //char nombreArchivo[]="salida.txt";
 
-    escribe_archivo(nombreArchivo);
+    //escribe_archivo(nombreArchivo);
+
+    tFecha fecha_proceso;
+    int i;
+    char path_txt[100];
+    FILE *arch_txt, *arch_bin, *arch_error;
+
+    /*
+    ----------------
+    FECHA DE PROCESO
+    ----------------
+    */
+    printf("Ingrese la fecha de hoy \n");
+    ingresaFecha(&fecha_proceso);
+    muestraFecha(&fecha_proceso);
+
+    /*
+    ----------------
+    PATH DE ARCHIVO
+    ----------------
+    */
+
+    do {
+        printf("Ingrese el path del directorio \n");
+        fflush(stdin); // limpia lo que hay en el buffer
+
+        scanf("%s",path_txt);
+        arch_txt=fopen(path_txt,"rt");
+        if (!arch_txt){
+            printf("File not found \n");
+        }
+    } while(!arch_txt);
+
+    /*
+    --------------------------
+    Archivo binario y de error
+    --------------------------
+    */
+    arch_bin=fopen("archivos/archivo.bin","wb");
+    if(!arch_bin){
+        printf("File not found \n");
+        exit(1);
+    }
+
+    arch_error=fopen("archivos/archivo.err","wb");
+    if(!arch_error){
+        printf("File not found \n");
+        exit(1);
+    }
+
+    /*
+    --------------------------
+    Emulador de alumnos
+    --------------------------
+    */
+
+    Dalumno vectorAlumno[]={
+                        {25644899,"Pedro Paramo",{15,3,2000},"F",{27,1,2018},"INF",10,{27,3,2020},"R",{31,12,9999}},
+                        {22644899,"Victoria Ocampo",{1,9,1996},"F",{27,1,2005},"INF",10,{27,3,2012},"R",{24,6,92012}},
+                        {41704776,"      Jose,Perez",{12,1,1999},"M",{1,4,2018},"INF",23,{15,12,2020},"R",{31,12,9999}},
+                        {32709214,"     Mario,    Soso",{2,3,1992},"M",{1,4,2010},"ECO",32,{1,12,2020},"R",{31,12,9999}},
+                        {38564126,"Francisco,ortega ",{4,7,1995},"M",{1,4,2014},"EDF",38,{30,11,2020},"R",{31,12,9999}},
+                        {34926182,"juan        Lucero",{15,2,1993},"M",{1,4,2011},"IND",39,{10,12,2019},"R",{31,11,9999}},
+                        {42251216,"       Thiago ,Almada       ",{5,10,2000},"M",{1,4,2019},"ADM",12,{23,12,2020},"R",{31,12,9999}}
+                        };
+
+
+    for(i=0;i<TAM;i++){
+        if validaAlumno(){
+        // si es valido copiar al archivo.-->seguir clase desde hora 1:00
+        }
+    }
+
     return 0;
 }
 
    // int i;
     //Dalumno alu1;
-    //tFecha fecha_proceso;
+
 
     /// ingresar los datos
     /// validar

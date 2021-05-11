@@ -35,7 +35,7 @@
 	<stdbool.h>
 	<string.h>
 
-1620435405 source:/home/ceci/svn/CursoProgramacion/trunk/main.c
+1620520024 source:/home/ceci/svn/CursoProgramacion/trunk/main.c
 	<stdlib.h>
 	<stdbool.h>
 	<string.h>
@@ -83,7 +83,7 @@
 
 1619828791 /home/ceci/svn/CursoProgramacion/trunk/cadenas.h
 
-1620435433 source:/home/ceci/svn/CursoProgramacion/trunk/archivo.c
+1620436472 source:/home/ceci/svn/CursoProgramacion/trunk/archivo.c
 	<stdio.h>
 	<stdlib.h>
 	"alumno.h"
