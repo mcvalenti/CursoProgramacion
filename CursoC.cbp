@@ -39,6 +39,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="archivo.h" />
+		<Unit filename="archivosBinariosMain.txt">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="auxiliares.c">
 			<Option compilerVar="CC" />
 		</Unit>
