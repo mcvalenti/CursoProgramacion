@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "fecha.h"
 #include "auxiliares.h"
+#include "time.h"
 
 int es_bisiesto(int anio){
 
@@ -127,4 +128,37 @@ void muestraFecha(tFecha* tfecha1){
 
     printf("%d/%d/%d \n", tfecha1->dia,tfecha1->mes,tfecha1->anio);
 
+}
+
+void today(tFecha* now){
+
+  time_t t = time(NULL);
+  struct tm tm = *localtime(&t);
+  now->anio=tm.tm_year+1900;
+  now->mes=tm.tm_mon+1;
+  now->dia=tm.tm_mday;
+
+  //printf("now: %d-%02d-%02d %02d:%02d:%02d\n", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec);
+}
+
+int masModerno(tFecha* tfecha1, tFecha* tfecha2){
+/*
+    Compara tfecha1 con tfecha2
+    1: If tfecha1 > tfecha2 - tfecha1 mas moderna
+    0: If tfecha1 < tfecha2 - tfecha1 mas vieja
+*/
+    if (tfecha1->anio > tfecha2->anio){
+        return 1;
+        }
+    else if (tfecha1->anio = tfecha2->anio){
+        if (tfecha1->mes > tfecha2->mes){
+            return 1;
+            }
+        else if (tfecha1->mes = tfecha2->mes){
+            if (tfecha1->dia > tfecha2->dia){
+                return 1;
+            }
+        }
+        return 0;
+    }
 }

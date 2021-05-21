@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "alumno.h"
 #include "fecha.h"
 
@@ -25,7 +26,45 @@ int escribe_archivo(const char* nombreArchivo)
         return -2;
 }
 
+int texto_a_alumno(const char* cadena_txt, Dalumno* alumno, tFecha* tfecha1){
+    // pasar la cadena a la estructura alumno y validar
+    // |00001000| Pepe , Galleta   |22/03/1999|M|01/03/2010|HOL|0|01/03/2015|R|31/12/9999
+    char aux[100], *ptr;
+    int no_informa_fecha=1;
 
+    strcpy(aux,cadena_txt);
+
+    // fecha de baja
+    alumno->fecha_baja.dia=31;
+    alumno->fecha_baja.dia=12;
+    alumno->fecha_baja.dia=9999;
+
+    // Estado
+    //alumno->estado="R";
+
+    // fecha aprobacion ultima materia -> podria no venir!!
+    // Contar la cantidad de pipes es una opcion para saberlo
+    // Primero debo reemplazar los \n por \0
+    ptr=strchr(aux,'\n');
+    *ptr='\0';
+
+    if (cantidad_aparciones(aux,'|')==7){
+
+        ptr=strrchr(aux,'|');
+        scanf(ptr+1,"%d/%d/%d",&alumno->ultima_materia.dia,&alumno->ultima_materia.mes,&alumno->ultima_materia.anio);
+        *ptr='\0';
+        sfprintf("\n%d/%d/%d",alumno->ultima_materia.dia,alumno->ultima_materia.mes,alumno->ultima_materia.anio);
+    }
+    else{
+        no_informa_fecha=0;
+
+    }
+    return 1;
+}
+
+void graba_error(FILE* arch_error,const char* cadena_txt){
+    //
+}
 
    /* if (pf==NULL){ // Siempre validar que archivo no sea NULO
         system("PAUSE");

@@ -16,14 +16,17 @@ typedef struct {
 } Dalumno;
 
 
-int ingresaAlumno(Dalumno* alumno);
+/*
+    VALIDACIONES POR CAMPO
+*/
+int valida_fecha_nacimiento(tFecha* fecha_nacimiento);
+//int ingresaAlumno(Dalumno* alumno);
 
 //// Validaciones
 
-int validaAlumno(tFecha* fecha_proceso, Dalumno* alumno);
+//int validaAlumno(tFecha* fecha_proceso, Dalumno* alumno);
 //int valida_dni(int dni);
 //char* normalizar_nombre(char* nombre_completo);
-//int valida_fecha_nacimiento(tFecha* fecha_nacimiento);
 //int valida_sexo(char sexo);
 //int valida_fecha_ingreso(tFecha* fecha_ingreso);
 //
