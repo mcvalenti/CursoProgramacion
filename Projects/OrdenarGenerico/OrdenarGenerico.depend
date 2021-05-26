@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1621732637 source:/home/ceci/svn/CursoProgramacion/trunk/Projects/OrdenarGenerico/main.c
+	<stdio.h>
+	<stdlib.h>
+	"../../libs/vector_lib.h"
+
+1621732144 /home/ceci/svn/CursoProgramacion/trunk/libs/vector_lib.h
+	<stdbool.h>
+	<string.h>
+
+1621732175 source:/home/ceci/svn/CursoProgramacion/trunk/libs/vector_lib.c
+	"vector_lib.h"
+	<stdio.h>
+
+1621720620 source:/home/ceci/svn/CursoProgramacion/trunk/libs/alumno.c
+	<stdio.h>
+	"alumno.h"
+	"fecha.h"
+
+1621721120 /home/ceci/svn/CursoProgramacion/trunk/libs/alumno.h
+	"fecha.h"
+
+1621026765 /home/ceci/svn/CursoProgramacion/trunk/libs/fecha.h
+
