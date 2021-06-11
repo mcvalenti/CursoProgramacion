@@ -91,6 +91,14 @@ me permite volver y leer dentro del archivo. r+, w+, a+.
 fwrite--> devuelve un size(t) y fread son las funciones más usadas para trabajar con archivos binarios. 
 
 
+CLASE 8 DE JUNIO
+
+Merge o Apareo de Archivos
+
+Para hacer el merge ambos archivos tienen que estar ordenados por la misma clave. 
+Siempre despues de una lectura de archivo viene una consulta del eof
+y siempre que se abre un archivo se corrobora que tenga algo
+
 
 
 
