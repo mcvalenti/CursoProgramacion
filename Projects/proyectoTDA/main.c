@@ -5,7 +5,7 @@
 
 int main()
 {
-    int i,r;
+    int i,r,d;
     tPila p;
     crear_pila(&p);
     for (i=0;i<15;i++)
@@ -14,6 +14,8 @@ int main()
         if (!r)
             {printf("Pila llena");}
     }
+    ver_tope(&p,&d,sizeof(d));
+    printf("Tope de pila: %d \n",d);
     while(sacar_de_pila(&p,&i,sizeof(i))){
         printf("%d ",i);
     }
